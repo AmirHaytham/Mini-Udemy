@@ -16,7 +16,7 @@
 
 ## 🧐 About The Project
 
-> **Mini Udemy** is a simple learning website built with .NET using ASP.NET MVC for ITI summer 2020 internship.
+> **Mini Udemy** is a simple learning website as a final project built for our ITI .NET Web Development summer 2020 internship.
 
 ## ⚙ How it Works?!
 
@@ -36,7 +36,7 @@
 - Logic &amp; Implementation
   - The .NET Developers work on Integrating Views with Models (From database) using Controllers (MVC architecture)
   
-## ⛏️ Built Using <a name = "tech"></a>
+## ⛏️ Built Using
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - Object-oriented language that enables developers to build .NET applications.
 - [ASP.NET MVC](https://dotnet.microsoft.com/apps/aspnet/mvc) - A design pattern for achieving a clean separation of concerns.
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019) - Relational database management system developed by Microsoft.
