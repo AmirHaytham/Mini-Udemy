@@ -1,7 +1,7 @@
 # ITI .NET Web Development Intern 2020
 
 
-### 🧐 About The Project
+## 🧐 About The Project
 
 > **Mini Udemy** is a simple learning website built with .NET using ASP.NET MVC for ITI summer 2020 internship.
 
