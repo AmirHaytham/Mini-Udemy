@@ -14,7 +14,7 @@
 </div>
 
 
-## 🧐 About The Project
+## 🧐 About The Project  [In progress:zap:]
 
 > **Mini Udemy** is a simple learning website as a final project built for our ITI .NET Web Development summer 2020 internship.
 
