@@ -41,7 +41,7 @@
 - [ASP.NET MVC](https://dotnet.microsoft.com/apps/aspnet/mvc) - A design pattern for achieving a clean separation of concerns.
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019) - Relational database management system developed by Microsoft.
 
-## Contributors
+## :sparkles: Contributors
 > Thanks goes to these people in this team.
 
 <table>
