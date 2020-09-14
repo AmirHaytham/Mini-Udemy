@@ -1,0 +1,38 @@
+﻿ <!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+</head>
+<link href="~/Content/Registration.css" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+
+    <Center>
+        <div class="wrap">
+            <form action="~/Registration/Index" method="post">
+                <fieldset>
+                    <legend><h3>Sign Up</h3></legend>
+                    <input type="text" name="St_Fname" placeholder="First Name" />
+                    <input type="text" name="St_Lname" placeholder="Last name" />
+                    <input type="number" name="St_Age" placeholder="Age" />
+                    <input type="text" name="St_Email" placeholder="Email" />
+                    <input type="password" name="St_Password" placeholder="Password" />
+                    <input type="password" name="ConfirmPassword" placeholder="Confirm Password" />
+
+                    <input type="submit" value="Create account">
+                </fieldset>
+            </form>
+        </div>
+    </Center>
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+
+    }
+</body>

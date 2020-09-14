@@ -10,7 +10,8 @@ namespace Mini_Udemy.Controllers
     public class HomeController : Controller
     {
         DatabaseContext databaseContext = new DatabaseContext();
-
+        
+        
         public ActionResult Index()
         {
             if (Session["email"] != null)
@@ -23,6 +24,7 @@ namespace Mini_Udemy.Controllers
                 return View(databaseContext.Students);
             }
         }
+
         [HttpPost]
         public ActionResult Login(String email , String password)
         {
@@ -33,6 +35,9 @@ namespace Mini_Udemy.Controllers
             {
                 //Redirect to home
                 Session["email"] = email;
+                Session["Fname"] = loggedInStudent.St_Fname;
+                Session["Lname"] = loggedInStudent.St_Lname;
+                Session["Password"] = loggedInStudent.St_Password;
                 return RedirectToAction("Index", "MainPage");
             }
             else
@@ -40,5 +45,6 @@ namespace Mini_Udemy.Controllers
                 return RedirectToAction("Index");
             }
         }
+        
     }
 }
