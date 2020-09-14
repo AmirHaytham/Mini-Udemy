@@ -5,6 +5,8 @@
 
 > **Mini Udemy** is a simple learning website built with .NET using ASP.NET MVC for ITI summer 2020 internship.
 
+## ⚙ How it Works?!
+
 **The main Idea of the project is :**
 
 - Create a simple Registration form for students to sign up into the website.
