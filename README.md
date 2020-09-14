@@ -1,1 +1,21 @@
-# ITI .NET Web Development Intern
+# ITI .NET Web Development Intern 2020
+
+**Mini Udemy Project**
+
+Mini Udemy is a simple learning website built with .NET using asp .NET MVC for ITI summer 2020 internship.
+
+**The main Idea of the project is :**
+
+- Create a simple Registration form for students to sign up into the website.
+- Students can also Login to the website.
+- Students can search and enroll in a certain course.
+- Students can view their courses taken.
+
+**The project will be divided into 3 parts :**
+
+- Database Development
+  - The DBD (Database developer) works on designing the database from scratch using SQL Server &amp; SSMS.
+- Views &amp; UI/UX Structure
+  - The FrontEnd UI/UX Developers work on building beautiful UI using HTML , CSS , JQuery &amp; bootstrap.
+- Logic &amp; Implementation
+  - The .NET Developers work on Integrating Views with Models (From database) using Controllers (MVC architecture)
