@@ -51,7 +51,7 @@
       <img src="https://avatars2.githubusercontent.com/u/63167915?s=400&u=98395903ce4082b2573e58b82e33a842fbcd07cc&v=4" width="150px;" alt="Amir Haytham"/>
       <br />
         <sub><b>Amir Haytham Salama</b></sub></a>
-        <a href="https://github.com/AmirHaytham/Mini-Udemy/commits/master?author=AmirHaytham" title="Code">💻</a>
+        <a href="https://github.com/AmirHaytham/Mini-Udemy/commits/master?author=AmirHaytham" title="Commits">💻</a>
       <br />
    </td>
     
@@ -59,7 +59,7 @@
       <img src="https://avatars3.githubusercontent.com/u/50237142?s=400&u=1624314e6e9942374a96ca48916b95a8e434dcc8&v=4" width="150px;" alt="Mahmoud Ashour"/>
       <br />
         <sub><b>Mahmoud Ashour</b></sub></a>
-        <a href="https://github.com/AmirHaytham/Mini-Udemy/commits/master?author=MeitanteiAshour" title="Code">💻</a>
+        <a href="https://github.com/AmirHaytham/Mini-Udemy/commits/master?author=MeitanteiAshour" title="Commits">💻</a>
       <br />
    </td>
    
