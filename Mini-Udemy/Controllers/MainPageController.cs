@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mini_Udemy.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,11 @@ namespace Mini_Udemy.Controllers
 {
     public class MainPageController : Controller
     {
-        // GET: MainPage
+        DatabaseContext db = new DatabaseContext();
+
         public ActionResult Index()
         {
-            return View();
+            return View(db.Departments);
         }
     }
 }

@@ -9,9 +9,10 @@ namespace Mini_Udemy.Controllers
 {
     public class HomeController : Controller
     {
+        /*
+         [DatabaseContext] is the class which accesses our database
+         */
         DatabaseContext databaseContext = new DatabaseContext();
-        
-        
         public ActionResult Index()
         {
             if (Session["email"] != null)

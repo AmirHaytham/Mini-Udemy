@@ -1,9 +1,42 @@
 ﻿
-@{
-    ViewBag.Title = "Index";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
 
-<h2>@Session["email"] @Session["Fname"]  @Session["Password"]</h2>
+    <link href="~/Content/MainPage.css" rel="stylesheet" /> 
+    <title>Home</title>
+</head>
+<body>
+    <div class="split left">
+        <div class="centered">
 
 
+        </div>
+    </div>
 
+    <div class="split right">
+        <div class="centered">
+            <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit">Go</button>
+                <div class="container">
+                    <div class="dropdown">
+                        <select name="one" class="dropdown-select">
+                            <option value="">Select…</option>
+                            @{
+                                foreach (var item in Model)
+                                {
+                                    <option value=@item.Dept_Name>@item.Dept_Name</option>
+                                }
+                            }
+                        </select>
+                    </div>
+
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
