@@ -13,6 +13,7 @@ namespace Mini_Udemy.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.Departments = new SelectList(db.Departments, "Dept_Id", "Dept_Name");
             return View(db.Departments);
         }
     }
