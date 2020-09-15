@@ -26,7 +26,7 @@ namespace Mini_Udemy.Models
 
         public int? Dept_Id { get; set; }
 
-        [StringLength(100)]
+        [StringLength(700)]
         public string Image_Url { get; set; }
 
         public virtual Department Department { get; set; }

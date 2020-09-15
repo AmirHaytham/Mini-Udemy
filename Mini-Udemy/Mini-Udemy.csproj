@@ -134,6 +134,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009141558176_Course.cs" />
+    <Compile Include="Migrations\202009141558176_Course.Designer.cs">
+      <DependentUpon>202009141558176_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009141559182_Courses.cs" />
+    <Compile Include="Migrations\202009141559182_Courses.Designer.cs">
+      <DependentUpon>202009141559182_Courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\Department.cs" />
@@ -151,6 +160,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\home_style.css" />
+    <Content Include="Content\iphone6.jpg" />
+    <Content Include="Content\product-list-vertical.css" />
     <Content Include="Content\Registration.css" />
     <Content Include="Content\MainPage.css" />
     <Content Include="favicon.ico" />
@@ -183,6 +194,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\MainPage\Index.cshtml" />
     <Content Include="Views\Registration\Index.cshtml" />
+    <Content Include="Views\MainPage\Partial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -199,6 +211,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009141558176_Course.resx">
+      <DependentUpon>202009141558176_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009141559182_Courses.resx">
+      <DependentUpon>202009141559182_Courses.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

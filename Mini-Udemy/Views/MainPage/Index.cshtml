@@ -19,15 +19,26 @@
         <div class="centered">
             <form role="search" action="~/MainPage/Index" method="post">
                 <label for="search">Search</label>
-                <input id="search" type="search" placeholder="Search..." autofocus required />
-                <button type="submit">Go</button>
+                <input id="search" type="search" placeholder="Search..." name="courseName" autofocus required />
+                <button type="submit" name="courseName">Go</button>
                 <div class="container">
-            
-                    @Html.DropDownList("Dept_Name", ViewBag.Departments as SelectList, "Select Department", new { @class = "dropdown", onchange = "this.form.submit();" })
-            
+                    @Html.DropDownList(
+"Dept_Name", ViewBag.Departments as SelectList, "Select Department", new { @class = "dropdown", onchange = "this.form.submit();", Name = "searchVal" })
+
                 </div>
             </form>
-        </div>
+
+            @{
+                if (ViewBag.Courses != null)
+                {
+                    foreach (var item in ViewBag.Courses)
+                    {
+                        @Html.Partial("Partial", item as Object);
+                        }
+                    }
+                }
+            
+        </div> 
     </div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="~/Content/product-list-vertical.css" rel="stylesheet" />
+</head>
+<body>
+
+    <ul class="product-list-vertical">
+
+        <li>
+
+            <a class="product-photo">
+                @{ if (Model.Image_Url == null)
+                    {
+        <img src="~/Content/iphone6.jpg" height="160" alt="iPhone 6" /> }
+    else
+    {
+        <img src="@Model.Image_Url" height="160" alt="iPhone 6" /> } }
+            </a>
+
+
+            <h2>@Model.Crs_Name</h2>
+            
+            @{ 
+                if (!@ViewBag.Student.Courses.Contains(Model))
+                { 
+                    Session["enroller"] = ViewBag.Student;
+                    Session["courseEnrolled"] = Model;
+                    using (Html.BeginForm("Enroll", "MainPage", method: FormMethod.Post))
+                    {
+                //Didnt figure out yet how to enroll
+                        <input type="submit" value="Submit weakly typed form" />
+                      }
+                }else {
+        <button type="button"> UnEnroll </button>  
+                }
+    }
+
+            <div class="product-details">
+                <p>
+
+                    @Model.Crs_Name course duration is @Model.Crs_Duration hours
+                </p>
+            </div>
+
+        </li>
+
+    </ul>
+
+</body>
+
+</html>
