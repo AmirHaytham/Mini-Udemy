@@ -73,5 +73,11 @@ namespace Mini_Udemy.Controllers
             }
             return RedirectToAction("Index");
         }
+        public ActionResult ViewProfile()
+        {
+            String studentEmail =(String) Session["email"];
+            Student s = db.Students.FirstOrDefault(std=>std.St_Email.Equals(studentEmail));
+            return View(s);
+        }
     }
 }

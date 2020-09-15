@@ -306,6 +306,7 @@
     <Content Include="Views\Design\Hello.cshtml" />
     <Content Include="Views\Design\Hi.cshtml" />
     <Content Include="Views\Design\Myown.cshtml" />
+    <Content Include="Views\MainPage\ViewProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

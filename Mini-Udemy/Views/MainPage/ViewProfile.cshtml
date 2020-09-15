@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "ViewProfile";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/MainPage.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+            button:hover, a:hover {
+                opacity: 0.7;
+            }
+    </style>
+</head>
+<body>
+    <div class="split left">
+        <div class="centered">
+
+            <div class="card">
+                 <h1>@Model.St_Fname</h1>
+                 <p class="title">@Model.St_Lname</p>
+                 <ul>
+                     <li>Email : @Model.St_Email</li>
+                     <li>Password: @Model.St_Email</li>
+                     <li>Age : @Model.St_Age</li>
+                    
+                 </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
