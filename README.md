@@ -36,11 +36,13 @@
 - Logic &amp; Implementation
   - The .NET Developers work on Integrating Views with Models (From database) using Controllers (MVC architecture)
 
+
 ## 🤔 How to install it
 1. Install [Visual Studio](https://visualstudio.microsoft.com/) with .NET environment.
 2. Install [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019).
 3. Download the repo, then Open the ```Mini-Udemy.sln``` in the repo file.
 4. Build the all the project then run it.
+
 
 ## ⛏️ Built Using
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - Object-oriented language that enables developers to build .NET applications.
