@@ -40,7 +40,7 @@
 1. Install [Visual Studio](https://visualstudio.microsoft.com/) with .NET environment.
 2. Install [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019).
 3. Download the repo, then Open the ```Mini-Udemy.sln``` in the repo file.
-4. Build the all the projects then run it.
+4. Build the all the project then run it.
 
 ## ⛏️ Built Using
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - Object-oriented language that enables developers to build .NET applications.
