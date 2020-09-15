@@ -1,6 +1,8 @@
 ﻿using Mini_Udemy.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -14,8 +16,15 @@ namespace Mini_Udemy.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            ViewBag.Departments = new SelectList(db.Departments, "Dept_Id", "Dept_Name");
-            return View(db.Departments);
+            if (Session["email"] != null)
+            {
+                ViewBag.Departments = new SelectList(db.Departments, "Dept_Id", "Dept_Name");
+                return View(db.Departments);
+            }
+            else
+            {
+                return RedirectToAction("Index","Home");
+            }
         }
 
         [HttpPost]
@@ -33,24 +42,35 @@ namespace Mini_Udemy.Controllers
                 ViewBag.Courses = db.Courses.Where(s => s.Crs_Name.Contains(courseName));
 
             }
-            String storedSession = (String)Session["email"];
-            System.Diagnostics.Debug.WriteLine(storedSession);
+            String storedSession = (String)Session["email"]; 
             Student student = db.Students.FirstOrDefault(stud => stud.St_Email == storedSession);
             ViewBag.Student = student;
             return View(db.Departments);
 
         }
+        [HttpPost] 
+        public ActionResult Signout()
+        {
+            Session.Clear();
+   
+            return RedirectToAction("Index","Home");
+        }
         [HttpPost]
+        // [Ashour] Can't figure out how to enroll (Course) in the List of courses inside the (Student) Entity.
+
         public ActionResult Enroll()
         {
-            if (Session["enroller"] != null&& Session["courseEnrolled"] != null) {
+            if (Session["enroller"] != null&& Session["enrolledcourse"] != null) {
                 Student studentEnrolled = (Student)Session["enroller"];
-                Course course = (Course)Session["courseEnrolled"];
- 
+                var course = (Course)Session["enrolledcourse"];
+                Debug.WriteLine(studentEnrolled.Courses.Count());
                 studentEnrolled.Courses.Add(course);
-                db.SaveChanges();
-            }
+                db.Students.AddOrUpdate(studentEnrolled);
+                ViewBag.Student = studentEnrolled;
+                db.SaveChanges(); 
 
+                Debug.WriteLine(studentEnrolled.Courses.Count());
+            }
             return RedirectToAction("Index");
         }
     }

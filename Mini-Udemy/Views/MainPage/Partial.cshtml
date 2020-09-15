@@ -31,11 +31,11 @@
                 if (!@ViewBag.Student.Courses.Contains(Model))
                 { 
                     Session["enroller"] = ViewBag.Student;
-                    Session["courseEnrolled"] = Model;
+                    Session["enrolledcourse"] = Model;
                     using (Html.BeginForm("Enroll", "MainPage", method: FormMethod.Post))
                     {
-                //Didnt figure out yet how to enroll
-                        <input type="submit" value="Submit weakly typed form" />
+                        //Didnt figure out yet how to enroll
+                        <input type="submit" value="Enroll" />
                       }
                 }else {
         <button type="button"> UnEnroll </button>  

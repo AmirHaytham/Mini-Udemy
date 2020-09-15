@@ -13,6 +13,11 @@ namespace Mini_Udemy.Controllers
          [DatabaseContext] is the class which accesses our database
          */
         DatabaseContext databaseContext = new DatabaseContext();
+        [HttpGet]
+        /*
+         Session is global key-value class. 
+            If there is email then Authenticated , else the user is at the same page.
+         */
         public ActionResult Index()
         {
             if (Session["email"] != null)
@@ -29,12 +34,11 @@ namespace Mini_Udemy.Controllers
         [HttpPost]
         public ActionResult Login(String email , String password)
         {
-            Console.WriteLine(email);
             Student loggedInStudent = databaseContext.Students.FirstOrDefault(student => student.St_Email == email && student.St_Password == password);
             
             if (loggedInStudent!=null)
             {
-                //Redirect to home
+                //Redirect to MainPage
                 Session["email"] = email;
                 Session["Fname"] = loggedInStudent.St_Fname;
                 Session["Lname"] = loggedInStudent.St_Lname;
