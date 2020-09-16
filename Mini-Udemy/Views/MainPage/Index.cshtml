@@ -24,9 +24,13 @@
                 <div class="container">
                     @Html.DropDownList(
 "Dept_Name", ViewBag.Departments as SelectList, "Select Department", new { @class = "dropdown", onchange = "this.form.submit();", Name = "searchVal" })
-
                 </div>
             </form>
+
+            @{
+                ViewBag.Title = "Hi";
+                Layout = "~/Views/Shared/_MyLayout.cshtml";
+            }
 
             @{
                 if (ViewBag.Courses != null)
@@ -34,10 +38,10 @@
                     foreach (var item in ViewBag.Courses)
                     {
                         @Html.Partial("Partial", item as Object);
-                        }
                     }
                 }
-            
+            }
+
         </div> 
     </div>
 </body>
