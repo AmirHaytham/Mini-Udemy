@@ -40,7 +40,7 @@
 ## 🤔 How to install it
 1. Install [Visual Studio](https://visualstudio.microsoft.com/) with .NET environment.
 2. Install [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019).
-3. In ```DB Folder```, execute ```DB``` scripts on the ```SQL Server```, or restore the backup database ``mini_udemi.bak````
+3. In ```DB Folder```, execute ```DB``` scripts on the ```SQL Server```, or restore the backup database ```mini_udemi.bak````
 3. Download the repo, then Open the ```Mini-Udemy.sln``` in the repo file.
 4. Build the all the project then run it.
 
