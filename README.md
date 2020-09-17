@@ -5,7 +5,6 @@
   [![GitHub issues](https://img.shields.io/github/issues/AmirHaytham/Mini-Udemy)](https://github.com/AmirHaytham/Mini-Udemy/issues)
   [![GitHub forks](https://img.shields.io/github/forks/AmirHaytham/Mini-Udemy)](https://github.com/AmirHaytham/Mini-Udemy/network)
   [![GitHub stars](https://img.shields.io/github/stars/AmirHaytham/Mini-Udemy)](https://github.com/AmirHaytham/Mini-Udemy/stargazers)
-  [![GitHub license](https://img.shields.io/github/license/AmirHaytham/Mini-Udemy)](https://github.com/AmirHaytham/Mini-Udemy/blob/master/LICENSE)
   <img src="https://img.shields.io/github/languages/count/AmirHaytham/Mini-Udemy" />
   <img src="https://img.shields.io/github/languages/top/AmirHaytham/Mini-Udemy" />
   <img src="https://img.shields.io/github/languages/code-size/AmirHaytham/Mini-Udemy" />
